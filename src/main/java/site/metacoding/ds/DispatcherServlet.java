@@ -66,6 +66,7 @@ public class DispatcherServlet extends HttpServlet{ // extends HttpServlet : 소
 				if(identifier.equals(requestMapping.value())){
 					method.invoke(c);	// 메서드 강제호출 = invoke(메모리에뜬 래퍼런스주소,method의 파라미터-지금은 파라미터가 없음)
 				}
+				
 			} catch (Exception e) {
 				System.out.println(method.getName()+"은 어노테이션이 없습니다");
 			}
